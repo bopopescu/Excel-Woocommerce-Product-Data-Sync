@@ -3,8 +3,6 @@
 # for the creation of the executable, follow the instructions below (package installed):
 # https://medium.com/dreamcatcher-its-blog/making-an-stand-alone-executable-from-a-python-script-using-pyinstaller-d1df9170e263
 
-# hello
-# import time
 
 from Tkinter import *
 import tkMessageBox
@@ -48,7 +46,7 @@ class ExcelWoocommerceSyncApplication(Frame):
             )
         # inform the user about the result of the operation
         if updateResult == False:
-            tkMessageBox.showerror(u'Πρόβλημα', u'Πρόβλημα με την ενημέρωση των τιμών-'+errorMessage)
+            tkMessageBox.showerror(u'Πρόβλημα', u'Πρόβλημα! '+errorMessage)
         else:
             tkMessageBox.showinfo(u'Επιτυχία', u'Η ενημέρωση των τιμών έγινε με επιτυχία')
 
