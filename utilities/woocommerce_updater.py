@@ -47,10 +47,9 @@ class WooCommerceUpdater:
                 # create an index for SKUs to use when searching for a specific product data
                 skuIndex = dict()
                 for i in range(0, skuData.size):
-                    skuIndex[str(skuData[i])] = i
+                    skuIndex[skuData[i]] = i
 
-                # initialize the progress bar
-                progressBar['maximum'] = len(skuData)
+
 
                 # update WooCommerce
 
@@ -66,6 +65,10 @@ class WooCommerceUpdater:
                 # get the number of products in the database
                 noOfSKUSSqlStatement = "SELECT count(*) FROM 4mnHYjMa6v_postmeta " \
                                        "WHERE meta_key='_sku' and meta_value is not null and meta_value !=''"
+
+                # initialize the progress bar
+                progressBar['maximum'] = noOfSKUSSqlStatement
+
                 noOfSkuCursor = cnx.cursor()
                 noOfSkuCursor.execute(noOfSKUSSqlStatement)
                 for a in noOfSkuCursor:
@@ -122,7 +125,7 @@ class WooCommerceUpdater:
                     progressBar.update()
 
                     # update the status
-                    lblStatus['text'] = u'Ενημερώθηκαν ' \
+                    lblStatus['text'] = u'Ενημερώνονται ' \
                                             + str(updatedCounter) + u' από ' + str(noOfSKUSinWoocommerce)
 
                 cnx.commit()
@@ -130,7 +133,7 @@ class WooCommerceUpdater:
                 return True, ''
             except Exception, e:
                 # if any exception occurs, return False
-                return False, u'Πρόβλημα με την ενημέρωση των τιμών. '+e.msg
+                return False, u'Πρόβλημα με την ενημέρωση των τιμών. '  # + e.msg
 
 
     @staticmethod
