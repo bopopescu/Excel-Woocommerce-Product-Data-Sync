@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/woocommerce_updater.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,40 +18,42 @@
     <session id="56976571">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="38" />
+          <entry key="py" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="38" />
+          <entry key="Python" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="192" />
           <entry key="dummy" value="7" />
-          <entry key="py" value="13849" />
+          <entry key="py" value="16317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="14041" />
+          <entry key="Python" value="16509" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -102,29 +104,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-              <folding>
-                <element signature="e#122#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,6 +117,8 @@
     <findStrings>
       <find>g:/</find>
       <find>g:</find>
+      <find>Ενημερώ</find>
+      <find>lstrip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,18 +138,20 @@
         <option value="$PROJECT_DIR$/venv/Scripts/activate.bat" />
         <option value="$PROJECT_DIR$/excel_utilities/woocommerce_updater.py" />
         <option value="$PROJECT_DIR$/app-config.py" />
-        <option value="$PROJECT_DIR$/tests/test_woocommerce_updater.py" />
         <option value="$PROJECT_DIR$/login_screen.py" />
         <option value="$PROJECT_DIR$/utilities/excel_reader.py" />
         <option value="$PROJECT_DIR$/main_app.py" />
         <option value="$PROJECT_DIR$/app_config.py" />
+        <option value="$PROJECT_DIR$/utilities/test_prices_sync.py" />
+        <option value="$PROJECT_DIR$/tests/test_prices_sync.py" />
+        <option value="$PROJECT_DIR$/tests/test_woocommerce_updater.py" />
         <option value="$PROJECT_DIR$/utilities/woocommerce_updater.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="352" />
-    <option name="y" value="221" />
+    <option name="x" value="362" />
+    <option name="y" value="213" />
     <option name="width" value="1255" />
     <option name="height" value="715" />
   </component>
@@ -177,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,18 +172,27 @@
             <path>
               <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
               <item name="excel_woocommerce_sync" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel_woocommerce_sync" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\python_foundation\excel_woocommerce_sync\tests" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.login_screen">
+  <component name="RunManager" selected="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices">
     <configuration name="login_screen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="excel_woocommerce_sync" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -285,19 +279,35 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="excel_woocommerce_sync" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main_app" />
       <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
       <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
       <item itemvalue="Python.login_screen" />
+      <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
         <item itemvalue="Python.login_screen" />
         <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
         <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
         <item itemvalue="Python.main_app" />
-        <item itemvalue="Python.login_screen" />
       </list>
     </recent_temporary>
   </component>
@@ -315,35 +325,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 19m 30s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 09h 42m 33s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 31m 25s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 09h 43m 05s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 31m 57s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 09h 47m 00s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 33m 33s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 14m 12s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 34m 59s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 18m 46s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 36m 22s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 22m 30s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.10.26 at 11h 36m 24s.xml">
-      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 24m 46s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testDbUpdate - 2018.10.29 at 08h 18m 15s.xml">
-      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 28m 40s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testDbUpdate - 2018.10.29 at 08h 18m 52s.xml">
-      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 29m 11s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testDbUpdate - 2018.10.29 at 08h 19m 16s.xml">
-      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" configurationId="tests" />
+    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 29m 18s.xml">
+      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -356,21 +366,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11011591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16649105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.32939914" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8303477" visible="true" weight="0.36480686" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7750263" weight="0.49570817" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82333606" weight="0.5232358" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7692308" weight="0.43600866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49736565" weight="0.29399142" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74604845" weight="0.26030368" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.16965227" side_tool="true" visible="true" weight="0.36480686" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17666392" side_tool="true" visible="true" weight="0.20715836" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.89357215" weight="0.32939914" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -385,11 +395,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
           <line>38</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
@@ -400,13 +405,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>135</line>
+          <line>141</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="46" />
+          <line>138</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -421,47 +441,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>skuIndex[str(u'ΥΠΗ'.encode('utf-8'))]</expression-string>
+        <expression-string>sku</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>skuIndex[u'ΥΠΗ'.encode('utf-8')]</expression-string>
+        <expression-string>wcSku.lstrip('z')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>skuIndex[u'ΥΠΗ'.encode()]</expression-string>
+        <expression-string>WooCommerceUpdater.getErpCode(wcSkuData[i])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>skuIndex[u'ΥΠΗ']</expression-string>
+        <expression-string>excelIndex</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>skuIndex['ΥΠΗ']</expression-string>
+        <expression-string>wcSkuData[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>skuIndex['aaa']</expression-string>
+        <expression-string>wcQuantity</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'ΥΠΗ'.decode(unicode=True)</expression-string>
+        <expression-string>skuData[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'ΥΠΗ'.decode(unicode)</expression-string>
+        <expression-string>skuData</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'ΥΠΗ'.decode('unicode')</expression-string>
+        <expression-string>float(wcRetailPrice1[i]) != retailPrice1[excelIndex]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -507,13 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_woocommerce_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/excel_reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -539,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#266#287#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,13 +562,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_prices_sync.py" />
     <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="365">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
           <folding>
             <element signature="e#122#141#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_woocommerce_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>

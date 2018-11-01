@@ -66,13 +66,16 @@ class WooCommerceUpdater:
                 noOfSKUSSqlStatement = "SELECT count(*) FROM 4mnHYjMa6v_postmeta " \
                                        "WHERE meta_key='_sku' and meta_value is not null and meta_value !=''"
 
-                # initialize the progress bar
-                progressBar['maximum'] = noOfSKUSSqlStatement
+
 
                 noOfSkuCursor = cnx.cursor()
                 noOfSkuCursor.execute(noOfSKUSSqlStatement)
+
                 for a in noOfSkuCursor:
                     noOfSKUSinWoocommerce = a[0]
+
+                # initialize the progress bar
+                progressBar['maximum'] = noOfSKUSinWoocommerce
 
                 # get the product skus that exist in the woocommerce database
                 skuSqlStatement = "SELECT meta_value FROM `4mnHYjMa6v_postmeta` " \
@@ -154,5 +157,16 @@ class WooCommerceUpdater:
               "set a.meta_value=" + elementData
         dbConnection.cursor().execute(sqlStatement)  # execute statement
 
+    @staticmethod
+    def getErpCode(wcSku):
+        """
 
+        :param wcSku:  the SKU in Woocommerce
+        :return: the sku as it is stored in the ERP
+        """
 
+        sku = wcSku.lstrip('z')  # strip the z character
+        sku = sku.lstrip('Z')  # strip the z character
+        sku = sku.split('-')[0]  # get the part before the dash (-)
+
+        return sku
