@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7a4f5b7-d04b-42a3-aa74-8d85e3205629" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/woocommerce_updater.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,97 +13,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="56976571">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="42" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="42" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="192" />
-          <entry key="dummy" value="7" />
-          <entry key="py" value="16317" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="16509" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages">
-        <counts>
-          <entry key="git.branch.checkout.local" value="1" />
-          <entry key="git.branch.create.new" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-693070544">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="12" />
-          <entry key="bat" value="2" />
-          <entry key="dummy" value="12" />
-          <entry key="py" value="823" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="835" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="bat" value="2" />
-          <entry key="ps1" value="1" />
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,18 +50,19 @@
         <option value="$PROJECT_DIR$/app-config.py" />
         <option value="$PROJECT_DIR$/login_screen.py" />
         <option value="$PROJECT_DIR$/utilities/excel_reader.py" />
-        <option value="$PROJECT_DIR$/main_app.py" />
         <option value="$PROJECT_DIR$/app_config.py" />
         <option value="$PROJECT_DIR$/utilities/test_prices_sync.py" />
         <option value="$PROJECT_DIR$/tests/test_prices_sync.py" />
         <option value="$PROJECT_DIR$/tests/test_woocommerce_updater.py" />
         <option value="$PROJECT_DIR$/utilities/woocommerce_updater.py" />
+        <option value="$PROJECT_DIR$/main_app.py" />
+        <option value="$PROJECT_DIR$/utilities/test_sync_results.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
-    <option name="y" value="213" />
+    <option name="x" value="274" />
+    <option name="y" value="328" />
     <option name="width" value="1255" />
     <option name="height" value="715" />
   </component>
@@ -168,11 +79,6 @@
             <path>
               <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
               <item name="excel_woocommerce_sync" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
-              <item name="excel_woocommerce_sync" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
@@ -206,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices">
+  <component name="RunManager" selected="Python.login_screen">
     <configuration name="login_screen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="excel_woocommerce_sync" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,18 +202,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main_app" />
+      <item itemvalue="Python.login_screen" />
       <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
       <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
-      <item itemvalue="Python.login_screen" />
       <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
         <item itemvalue="Python.login_screen" />
-        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
-        <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
         <item itemvalue="Python.main_app" />
+        <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
+        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
+        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -325,9 +231,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 09h 42m 33s.xml">
-      <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 09h 43m 05s.xml">
       <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
@@ -355,6 +258,9 @@
     <history-entry file="pytest_for_test_woocommerce_updater_TestWooCommerceUpdater_testSyncPrices - 2018.11.01 at 11h 29m 18s.xml">
       <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_excel_file_TestExcelFile_test_isValid - 2018.11.05 at 10h 38m 33s.xml">
+      <configuration name="pytest for test_excel_file.TestExcelFile.test_isValid" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,71 +274,98 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16649105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20179136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.32939914" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82333606" weight="0.5232358" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7692308" weight="0.43600866" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8208641" weight="0.4452871" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.76659644" weight="0.43770313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49736565" weight="0.29399142" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74604845" weight="0.26030368" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17666392" side_tool="true" visible="true" weight="0.20715836" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.89357215" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49683878" visible="true" weight="0.2936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.743941" weight="0.25937834" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" visible="true" weight="0.2936078" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8930453" weight="0.24377032" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>141</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utilities/woocommerce_updater.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="66" />
+          <line>119</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="sku" language="Python" />
+        <watch expression="productIndex" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>sqlStatement.encode('utf8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sqlStatement</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cnx.commit()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cnx</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dbConnection.cursor().execute(sqlStatement)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>skuIndex</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>sku == 'z0000-1'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>productData[0] == 'z0000-1'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>productIndex</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>sku</expression-string>
         <language-id>Python</language-id>
@@ -440,6 +373,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>skuCursor</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>sku</expression-string>
         <language-id>Python</language-id>
@@ -480,11 +418,6 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>float(wcRetailPrice1[i]) != retailPrice1[excelIndex]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -513,45 +446,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/mysql/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tests/test_excel_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="1" selection-start-line="6" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/io/excel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="282" column="4" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/excel_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_screen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="1863" selection-start-line="1863" selection-end-line="1863" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -563,20 +461,68 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_prices_sync.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_excel_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="1863" selection-start-line="1863" selection-end-line="1863" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/excel_file.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/excel_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_woocommerce_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="70" column="62" selection-start-line="70" selection-start-column="62" selection-end-line="70" selection-end-column="62" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="-2598">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#122#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_woocommerce_updater.py">
+    <entry file="file://$PROJECT_DIR$/main_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="73" column="54" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_screen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/test_sync_results.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
         </state>
       </provider>
     </entry>

@@ -17,6 +17,7 @@ class WooCommerceUpdater:
     @staticmethod
     def importDataInWoocommerce(excelFileName, progressBar, lblStatus):
         """
+        Method that executes the update of product data on the WooCommerce database.
 
         :param excelFileName: the file name of the excel file that will be imported
         :param progressBar: the progressbar showing the progress. The function will update it
@@ -30,6 +31,7 @@ class WooCommerceUpdater:
         columns = []
         for col in df.columns:
             columns.append(col)
+
         # check the validity of the filename and columns
         fileValidityResult, validityErrorMessage = ExcelReader.isValid(excelFileName, columns)
         if fileValidityResult is False:  # if not valid, return False
@@ -47,9 +49,8 @@ class WooCommerceUpdater:
                 # create an index for SKUs to use when searching for a specific product data
                 skuIndex = dict()
                 for i in range(0, skuData.size):
-                    skuIndex[skuData[i]] = i
-
-
+                    skuIndex[skuData[i]] = i  # key: sku, value: the line(index) in the prev lists for
+                    # the specific sku
 
                 # update WooCommerce
 
@@ -65,12 +66,8 @@ class WooCommerceUpdater:
                 # get the number of products in the database
                 noOfSKUSSqlStatement = "SELECT count(*) FROM 4mnHYjMa6v_postmeta " \
                                        "WHERE meta_key='_sku' and meta_value is not null and meta_value !=''"
-
-
-
                 noOfSkuCursor = cnx.cursor()
                 noOfSkuCursor.execute(noOfSKUSSqlStatement)
-
                 for a in noOfSkuCursor:
                     noOfSKUSinWoocommerce = a[0]
 
@@ -89,12 +86,12 @@ class WooCommerceUpdater:
                 # for each product in the Woocommerce database, update the woocommerce product data
                 # based on the data from the Excel file
                 for productData in skuCursor:
-                    sku = productData[0]  # get the product sku
+
+                    sku = productData[0]  # get the product sku in Soft1 format
                     counter = counter + 1  # increase the counter
 
                     # get the index of the product with the specific sku
-                    # don't forget to remove z from the beginning
-                    productIndex = skuIndex.get(sku.lstrip('z'))
+                    productIndex = skuIndex.get(WooCommerceUpdater.getErpCode(sku))
 
                     # update the woocommerce data of the specific product
                     if productIndex is not None:  # if the product sku exists in the excel file, update product data

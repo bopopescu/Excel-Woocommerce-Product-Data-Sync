@@ -96,7 +96,7 @@ class ExcelWoocommerceSyncApplication(Frame):
         self.PGB_UPDATE_PROGRESS_BAR.pack(padx=6, side=LEFT)
 
         # status label
-        self.LBL_STATUS = Label(self, width=20)
+        self.LBL_STATUS = Label(self, width=25)
         self.LBL_STATUS.pack(padx=6)
 
     def __init__(self, master=None):
