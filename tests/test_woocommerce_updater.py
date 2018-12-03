@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import unittest
 
 import mysql.connector
@@ -90,6 +91,41 @@ class TestWooCommerceUpdater(unittest.TestCase):
         assert noOfProblems == 0  # assert no problems have been found
         assert noOfChecks == wcSkuData.size  # assert that all data have been checked
 
+    def test_saveLogToFile(self):
+        """
+        testing the static method that saves logs to files. Scenarios:
+        a) saving a success log msg. Check that the success file exists and that the message has been inserted
+        b) saving an error log msg. Check that the errors file exists and that the message has been inserted
+        :return:
+        """
+        # set folder and file names
+        logFolderName = 'logs'
+        successFileName = 'success.txt'
+        errorsFileName = 'errors.txt'
+
+        # Scenario a. Success log.
+        # save some log
+        filePath = os.path.join(logFolderName, successFileName)  # the success file path
+        logMsg = 'Successful sync'  # the message that will be recorded
+        WooCommerceUpdater.saveLogToFile(logMsg)
+        # check that the file exists
+        assert os.path.exists(filePath)
+        # check that the file contains the log
+        assert logMsg in open(filePath).read()
+        # check that irrelevant messages do not exist in the log file
+        assert not 'irrelevantblabla' in open(filePath).read()
+
+        # Scenario b. Error log.
+        # save some log
+        filePath = os.path.join(logFolderName, errorsFileName)  # the error file pat
+        logMsg = 'Problem with sync'  # the message that will be recorded
+        WooCommerceUpdater.saveLogToFile(logMsg, False)
+        # check that the file exists
+        assert os.path.exists(filePath)
+        # check that the file contains the log
+        assert logMsg in open(filePath).read()
+        # check that irrelevant messages do not exist in the log file
+        assert not 'irrelevantblabla' in open(filePath).read()
 
 
 

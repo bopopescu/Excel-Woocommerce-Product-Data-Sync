@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # Resource for accessing excel data with pandas: https://pythonspot.com/read-excel-with-pandas/
+import datetime
+import os
 
 import pandas as pd
 import mysql.connector  # install mysql-connector-python
@@ -35,7 +37,9 @@ class WooCommerceUpdater:
         # check the validity of the filename and columns
         fileValidityResult, validityErrorMessage = ExcelReader.isValid(excelFileName, columns)
         if fileValidityResult is False:  # if not valid, return False
-            return False, u'Πρόβλημα με την ανάγνωση του αρχείου-'+validityErrorMessage
+            errorMsg = u'Πρόβλημα με την ανάγνωση του αρχείου-'+validityErrorMessage
+            WooCommerceUpdater.saveLogToFile(errorMsg, False)
+            return False, errorMsg
         else:  # if valid, then load data from the excel file and update WooCommerce
 
             try:
@@ -127,13 +131,16 @@ class WooCommerceUpdater:
                     # update the status
                     lblStatus['text'] = u'Ενημερώνονται ' \
                                             + str(updatedCounter) + u' από ' + str(noOfSKUSinWoocommerce)
-
-                cnx.commit()
+                cnx.commit()  # commit the transactions
                 cnx.close()  # close the database connection
+                WooCommerceUpdater.saveLogToFile(
+                    u'Ενημερώθηκαν '
+                        + str(updatedCounter) + u' από ' + str(noOfSKUSinWoocommerce)
+                )  # store success log in log file
                 return True, ''
             except Exception, e:
                 # if any exception occurs, return False
-                return False, u'Πρόβλημα με την ενημέρωση των τιμών. '  # + e.msg
+                return False, u'Πρόβλημα με την ενημέρωση των στοιχείων των προϊόντων. '  # + e.msg
 
 
     @staticmethod
@@ -167,3 +174,46 @@ class WooCommerceUpdater:
         sku = sku.split('-')[0]  # get the part before the dash (-)
 
         return sku
+
+    @staticmethod
+    def saveLogToFile(text, isSuccess=True):
+        """
+        Static method that will be called when a log needs to be saved. If the log is related to success, it will
+        be saved in success.txt, else it will be saved in errors.txt
+        :param text: the text message accompanying the log (string)
+        :param isSuccess: bool value showing if the log is about success or failure. Default is success (True)
+        :return: None if everything ok, else msg related to the problem of saving log
+        """
+
+        # define the file names and the folder
+        logFolderName = 'logs'
+        successFileName = 'success.txt'
+        errorsFileName = 'errors.txt'
+
+        try:
+            text = text.encode('utf8')  # encode the text. Needed for greek characters.
+
+            # create the log folder, if it does not exist
+            if not os.path.exists('logs'):
+                os.makedirs(logFolderName)
+
+            if isSuccess:  # case of successful log
+                # create/open the file for appending adata
+                successFile = open(os.path.join(logFolderName, successFileName), 'a+')  #
+                # write the info into the file
+                msgToWrite = 'Date: ' + str(datetime.datetime.now()) + '. ' + text + '\n'
+                successFile.write(msgToWrite)
+                # close the file
+                successFile.close()
+            else:  # case of not log records for problems
+                # create/open the file for appending adata
+                errorsFile = open(os.path.join(logFolderName, errorsFileName), 'a+')  #
+                # write the info into the file
+                msgToWrite = 'Date: ' + str(datetime.datetime.now()) + '. ' + text + '\n'
+                errorsFile.write(msgToWrite)
+                # close the file
+                errorsFile.close()
+        except Exception, e:
+            return 'Problem writing into log files'
+
+
