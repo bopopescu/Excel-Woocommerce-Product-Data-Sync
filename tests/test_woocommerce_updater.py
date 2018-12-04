@@ -96,18 +96,20 @@ class TestWooCommerceUpdater(unittest.TestCase):
         testing the static method that saves logs to files. Scenarios:
         a) saving a success log msg. Check that the success file exists and that the message has been inserted
         b) saving an error log msg. Check that the errors file exists and that the message has been inserted
+        c) saving some sync log messages.
         :return:
         """
         # set folder and file names
         logFolderName = 'logs'
         successFileName = 'success.txt'
         errorsFileName = 'errors.txt'
+        checkSyncFileName = 'check_sync_log.txt'
 
         # Scenario a. Success log.
         # save some log
         filePath = os.path.join(logFolderName, successFileName)  # the success file path
         logMsg = 'Successful sync'  # the message that will be recorded
-        WooCommerceUpdater.saveLogToFile(logMsg)
+        WooCommerceUpdater.saveLogToFile(logMsg, WooCommerceUpdater.LOG_TYPE_SUCCESS)
         # check that the file exists
         assert os.path.exists(filePath)
         # check that the file contains the log
@@ -119,13 +121,35 @@ class TestWooCommerceUpdater(unittest.TestCase):
         # save some log
         filePath = os.path.join(logFolderName, errorsFileName)  # the error file pat
         logMsg = 'Problem with sync'  # the message that will be recorded
-        WooCommerceUpdater.saveLogToFile(logMsg, False)
+        WooCommerceUpdater.saveLogToFile(logMsg, WooCommerceUpdater.LOG_TYPE_ERRORS)
         # check that the file exists
         assert os.path.exists(filePath)
         # check that the file contains the log
         assert logMsg in open(filePath).read()
         # check that irrelevant messages do not exist in the log file
         assert not 'irrelevantblabla' in open(filePath).read()
+
+        # Scenario c. Check Sync log
+        filePath = os.path.join(logFolderName, checkSyncFileName)  # the sync file path
+        # save two messages - append mode
+        logMsg = 'Syncing'  # the message that will be recorded
+        WooCommerceUpdater.saveLogToFile(logMsg, WooCommerceUpdater.LOG_TYPE_CHECK_SYNC)
+        logMsg2 = 'Second sync'  # the message that will be recorded
+        WooCommerceUpdater.saveLogToFile(logMsg2, WooCommerceUpdater.LOG_TYPE_CHECK_SYNC)
+        # check that the file exists
+        assert os.path.exists(filePath)
+        # check that the file contains the log message
+        assert logMsg in open(filePath).read()
+        assert logMsg2 in open(filePath).read()
+
+        # write an other log message in the sync log. Overwrite the previous
+        logMsg3 = 'Third sync'  # the message that will be recorded
+        WooCommerceUpdater.saveLogToFile(logMsg3, WooCommerceUpdater.LOG_TYPE_CHECK_SYNC, False)
+
+        # check that the specific message exists in the file
+        assert logMsg3 in open(filePath).read()
+        # check that one of the previous messages does not exist in the file
+        assert logMsg not in open(filePath).read()
 
 
 

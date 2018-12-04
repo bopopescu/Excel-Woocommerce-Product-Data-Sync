@@ -41,7 +41,7 @@ class ExcelWoocommerceSyncApplication(Frame):
         """
         # start the process of importing the data
         updateResult, errorMessage = \
-            WooCommerceUpdater.importDataInWoocommerce(
+            WooCommerceUpdater.handleWoocommerceDataSync(
                 self.filePath, self.PGB_UPDATE_PROGRESS_BAR, self.LBL_STATUS
             )
         # inform the user about the result of the operation
@@ -49,6 +49,22 @@ class ExcelWoocommerceSyncApplication(Frame):
             tkMessageBox.showerror(u'Πρόβλημα', u'Πρόβλημα! '+errorMessage)
         else:
             tkMessageBox.showinfo(u'Επιτυχία', u'Η ενημέρωση των τιμών έγινε με επιτυχία')
+
+    def checkWoocommerceProductData(self):
+        """
+        Method called when pressing the CHECK_WOOCOMMERCE button
+        :return:
+        """
+        # start the process of checking
+        checkResult, errorMessage = \
+            WooCommerceUpdater.handleWoocommerceDataSync(
+                self.filePath, self.PGB_UPDATE_PROGRESS_BAR, self.LBL_STATUS, isCheck=True
+            )
+        # inform the user about the result of the operation
+        if not checkResult:
+            tkMessageBox.showerror(u'Πρόβλημα', u'Πρόβλημα! ' + errorMessage)
+        else:
+            tkMessageBox.showinfo(u'Επιτυχία', u'Ο έλεγχος των τιμών έγινε με επιτυχία')
 
     def cancelOperation(self):
         """
@@ -84,6 +100,12 @@ class ExcelWoocommerceSyncApplication(Frame):
         self.BTN_UPDATE_WOOCOMMERCE['text'] = u'Ενημέρωση στοιχείων προϊόντων Eshop'
         self.BTN_UPDATE_WOOCOMMERCE['command'] = self.updateWoocommerceProductData
         self.BTN_UPDATE_WOOCOMMERCE.pack(side=LEFT)
+
+        # button for checking that the product prices are synced
+        self.BTN_CHECK_WOOCOMMERCE = Button(self)
+        self.BTN_CHECK_WOOCOMMERCE['text'] = u'Έλεγχος στοιχείων προϊόντων Eshop'
+        self.BTN_CHECK_WOOCOMMERCE['command'] = self.checkWoocommerceProductData
+        self.BTN_CHECK_WOOCOMMERCE.pack(side=LEFT)
 
         # button for the cancel button
         self.BTN_CANCEL = Button(self)
