@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7a4f5b7-d04b-42a3-aa74-8d85e3205629" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/excel_woocommerce_sync.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project management.mpp" beforeDir="false" afterPath="$PROJECT_DIR$/Project management.mpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_woocommerce_updater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/woocommerce_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/woocommerce_updater.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,29 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="182" column="99" selection-start-line="182" selection-start-column="99" selection-end-line="182" selection-end-column="99" />
+            <state relative-caret-position="386">
+              <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
               <folding>
                 <element signature="e#121#136#0" expanded="true" />
-                <element signature="e#5044#8365#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/success.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logs/check_sync_log.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -68,7 +49,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="0.1.3_check_new_data_validity" />
       </map>
     </option>
   </component>
@@ -87,15 +68,15 @@
         <option value="$PROJECT_DIR$/utilities/test_prices_sync.py" />
         <option value="$PROJECT_DIR$/tests/test_prices_sync.py" />
         <option value="$PROJECT_DIR$/utilities/test_sync_results.py" />
-        <option value="$PROJECT_DIR$/main_app.py" />
         <option value="$PROJECT_DIR$/tests/test_woocommerce_updater.py" />
         <option value="$PROJECT_DIR$/utilities/woocommerce_updater.py" />
+        <option value="$PROJECT_DIR$/main_app.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="393" />
-    <option name="y" value="184" />
+    <option name="x" value="154" />
+    <option name="y" value="-8" />
     <option name="width" value="1255" />
     <option name="height" value="715" />
   </component>
@@ -105,6 +86,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,13 +97,12 @@
             <path>
               <item name="excel_woocommerce_sync" type="b2602c69:ProjectViewProjectNode" />
               <item name="excel_woocommerce_sync" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,6 +184,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="excel_woocommerce_sync" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="excel_woocommerce_sync" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,35 +214,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_woocommerce_updater.TestWooCommerceUpdater.test_saveLogToFile" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="excel_woocommerce_sync" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_woocommerce_updater.TestWooCommerceUpdater.test_saveLogToFile&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.main_app" />
       <item itemvalue="Python.login_screen" />
+      <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
       <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
       <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
-      <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.test_saveLogToFile" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.login_screen" />
-        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.test_saveLogToFile" />
-        <item itemvalue="Python.main_app" />
-        <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
         <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testSyncPrices" />
+        <item itemvalue="Python tests.pytest for test_woocommerce_updater.TestWooCommerceUpdater.testDbUpdate" />
+        <item itemvalue="Python tests.pytest for test_excel_file.TestExcelFile.test_isValid" />
+        <item itemvalue="Python.main_app" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543820073994</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Completed story 0.1.3. Added a button that can be used to check if the product data are synced (Woocommerce db - Excel export from Soft1). The story is tested.">
+      <created>1543910024159</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543910024159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -313,22 +301,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7367742" weight="0.1923077" />
       <window_info id="Structure" order="1" sideWeight="0.2632258" side_tool="true" weight="0.1923077" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49789253" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.817176" visible="true" weight="0.28060672" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8166491" weight="0.28060672" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.76238143" weight="0.1603467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4954807" weight="0.48281786" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74236035" weight="0.16251354" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.18282403" side_tool="true" visible="true" weight="0.28060672" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4954807" weight="0.34777898" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.74077976" visible="true" weight="0.2368703" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25922024" side_tool="true" visible="true" weight="0.2368703" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.8877766" weight="0.36078006" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,7 +324,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Solved the problem of not properly syncing products with SKUs containing '-' (eg z0000-1).&#10;- Made a sync and everything synced properly." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Solved the problem of not properly syncing products with SKUs containing '-' (eg z0000-1).&#10;- Made a sync and everything synced properly." />
+    <MESSAGE value="- Completed story 0.1.3. Added a button that can be used to check if the product data are synced (Woocommerce db - Excel export from Soft1). The story is tested." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Completed story 0.1.3. Added a button that can be used to check if the product data are synced (Woocommerce db - Excel export from Soft1). The story is tested." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -537,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_prices_sync.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_excel_file.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_screen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/test_sync_results.py" />
     <entry file="file://$PROJECT_DIR$/logs/text.txt" />
     <entry file="file://$PROJECT_DIR$/tests/logs/success.txt" />
@@ -580,16 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/logs/check_sync_log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/logs/check_sync_log.txt" />
     <entry file="file://$PROJECT_DIR$/tests/test_woocommerce_updater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="727">
@@ -600,21 +565,36 @@
     <entry file="file://$PROJECT_DIR$/logs/success.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
+    <entry file="file://$PROJECT_DIR$/logs/check_sync_log.txt" />
+    <entry file="file://$PROJECT_DIR$/main_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="182" column="99" selection-start-line="182" selection-start-column="99" selection-end-line="182" selection-end-column="99" />
-          <folding>
-            <element signature="e#121#136#0" expanded="true" />
-            <element signature="e#5044#8365#0" />
-          </folding>
+        <state relative-caret-position="58">
+          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/check_sync_log.txt">
+    <entry file="file://$PROJECT_DIR$/login_screen.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_screen.spec">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        <state relative-caret-position="-58" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/woocommerce_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
+          <folding>
+            <element signature="e#121#136#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@
 
 # for the creation of the executable, follow the instructions below (package installed):
 # https://medium.com/dreamcatcher-its-blog/making-an-stand-alone-executable-from-a-python-script-using-pyinstaller-d1df9170e263
+# According to the previous link, execute the command: pyinstaller --onefile login_screen.py
 
 
 from Tkinter import *
