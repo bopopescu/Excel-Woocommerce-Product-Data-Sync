@@ -9,6 +9,7 @@ import hashlib
 
 from main_app import ExcelWoocommerceSyncApplication
 
+APP_VERSION = '1.1'
 
 class LoginForm(Frame):
     """
@@ -37,7 +38,7 @@ class LoginForm(Frame):
             LoginForm.FORM_ROOT.destroy()  # close the login form
             # open the form for updating Woocommerce
             root = Tk()
-            root.title(u'Εφαρμογή ενημέρωσης τιμών e-shop')
+            root.title(u'Εφαρμογή ενημέρωσης τιμών e-shop εκδ.'+APP_VERSION)
             app = ExcelWoocommerceSyncApplication(master=root)
             app.mainloop()
         else:  # wrong credentials

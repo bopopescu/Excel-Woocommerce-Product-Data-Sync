@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['login_screen.py'],
-             pathex=['G:\\python_foundation\\excel_woocommerce_sync'],
+             pathex=['G:\\software_dev\\python_foundation\\excel_woocommerce_sync'],
              binaries=[],
              datas=[],
              hiddenimports=[],

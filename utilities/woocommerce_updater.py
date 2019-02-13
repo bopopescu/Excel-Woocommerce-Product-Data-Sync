@@ -132,11 +132,22 @@ class WooCommerceUpdater:
 
                             # update the stock
                             stock = quantity[productIndex]
+                            # if stock is less than zero, or no quantity (NaN) exists for the product, set it to zero
                             if stock < 0 or quantity.isna()[productIndex]:
-                                # if the stock is less than zero or contains the NaN value (pandas), then make it zero
                                 stock = 0
+
+                            # update the stock status, depending on the stock quantity
+                            # negative stock quantity is not possible, because of the previous if statement
+                            if stock == 0:
+                                WooCommerceUpdater.updateElementData(sku, '_stock_status', "'onbackorder'", cnx)
+                            else:  # stock >0
+                                WooCommerceUpdater.updateElementData(sku, '_stock_status', "'instock'", cnx)
+
                             WooCommerceUpdater.updateElementData(sku, '_stock', str(stock), cnx)
                             WooCommerceUpdater.updateElementData(sku, '_manage_stock', "'yes'", cnx)
+
+                            # update the allow backorders field
+                            WooCommerceUpdater.updateElementData(sku, '_backorders', "'yes'", cnx)
 
                             # update the status
                             lblStatus['text'] = u'Ενημερώνονται ' \
