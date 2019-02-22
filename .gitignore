@@ -1,3 +1,7 @@
 app_config.py
 app_config.pyc
 dist/*
+build/*
+logs/*
+tests/*
+Project management.mpp
