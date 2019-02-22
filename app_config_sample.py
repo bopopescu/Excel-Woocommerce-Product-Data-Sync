@@ -24,15 +24,8 @@ class DbCredentials:
     MYSQL_HOST = '...'
 
 
-    """
-    MYSQL_USER = '...'
-    MYSQL_PASSWORD = '...'
-    MYSQL_DATABASE = '...'
-    MYSQL_HOST = '...'
-    """
-
     # test database
-    TEST_MYSQL_USER = 'wooCommerceUser'
-    TEST_MYSQL_PASSWORD = '95$Syva2'
-    TEST_MYSQL_DATABASE = 'infoeraw192677_wordpress_q'
-    TEST_MYSQL_HOST = '185.138.42.24'
+    TEST_MYSQL_USER = '...'
+    TEST_MYSQL_PASSWORD = '...'
+    TEST_MYSQL_DATABASE = '...'
+    TEST_MYSQL_HOST = '...'
