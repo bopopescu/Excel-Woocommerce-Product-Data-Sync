@@ -8,8 +8,10 @@ import tkMessageBox
 import hashlib
 
 from main_app import ExcelWoocommerceSyncApplication
+from app_config import LoginCredentials
 
 APP_VERSION = '1.1'
+
 
 class LoginForm(Frame):
     """
@@ -17,8 +19,8 @@ class LoginForm(Frame):
     """
 
     # credentials for logging in the application
-    USERNAME = 'captain'
-    PASSWORD_HASH = '64610dc7f1d1b871a5c048fae4c86d8f710791fd25b8cd1de07bca35'  # password hash using sha224
+    USERNAME = LoginCredentials.USERNAME
+    PASSWORD_HASH = LoginCredentials.PASSWORD_HASH
 
     # class variable that holds the form root
     FORM_ROOT = Tk()

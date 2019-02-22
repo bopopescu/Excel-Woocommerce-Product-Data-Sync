@@ -3,6 +3,13 @@ File that stores some configuration
 """
 
 
+class LoginCredentials:
+    """
+    Class for storing the credentials used when logging in the application
+    """
+    USERNAME = 'captain'
+    PASSWORD_HASH = '64610dc7f1d1b871a5c048fae4c86d8f710791fd25b8cd1de07bca35'  # password hash using sha224
+
 class DbCredentials:
     """
     Class storing some db credentials
