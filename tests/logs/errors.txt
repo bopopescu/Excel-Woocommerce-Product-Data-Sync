@@ -1,9 +1,0 @@
-Date: 2018-12-03 17:21:36.290000. Problem with sync
-Date: 2018-12-03 17:21:52.483000. Problem with sync
-Date: 2018-12-03 17:22:40.446000. Problem with sync
-Date: 2018-12-03 17:24:24.612000. Problem with sync
-Date: 2018-12-04 09:08:55.448000. Problem with sync
-Date: 2018-12-04 09:12:19.784000. Problem with sync
-Date: 2018-12-04 09:14:07.654000. Problem with sync
-Date: 2018-12-04 09:19:11.454000. Problem with sync
-Date: 2018-12-04 09:19:16.628000. Problem with sync
