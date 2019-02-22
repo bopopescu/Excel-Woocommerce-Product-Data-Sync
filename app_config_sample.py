@@ -1,6 +1,8 @@
 """
 Sample File that stores some configuration
-Replace ... with your configuration data
+Steps:
+a) Replace ... with your configuration data
+b) Rename file to app_config.py
 """
 
 
