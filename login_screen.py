@@ -41,7 +41,7 @@ class LoginForm(Frame):
             # open the form for updating Woocommerce
             root = Tk()
             root.title(u'Εφαρμογή ενημέρωσης τιμών e-shop εκδ.'+APP_VERSION)
-            app = ExcelWoocommerceSyncApplication(master=root)
+            app = ExcelWoocommerceSyncApplication(main=root)
             app.mainloop()
         else:  # wrong credentials
             tkMessageBox.showerror(u'Πρόβλημα Σύνδεσης', u'Τα στοιχεία σύνδεσης δεν είναι σωστά')
@@ -84,12 +84,12 @@ class LoginForm(Frame):
 
         self.TXT_USERNAME.focus()  # set the keyboard focus on username textfield
 
-    def __init__(self, master=None):
+    def __init__(self, main=None):
         """
         constructor method
-        :param master:
+        :param main:
         """
-        Frame.__init__(self, master)
+        Frame.__init__(self, main)
         self.pack()
         # create the widgets of the application
         self.createWidgets()
@@ -99,6 +99,6 @@ class LoginForm(Frame):
 # root = Tk()
 LoginForm.FORM_ROOT.geometry("500x70")
 LoginForm.FORM_ROOT.title(u'Εφαρμογή ενημέρωσης τιμών e-shop - Είσοδος')
-app = LoginForm(master=LoginForm.FORM_ROOT)
+app = LoginForm(main=LoginForm.FORM_ROOT)
 app.mainloop()
 LoginForm.FORM_ROOT.destroy()

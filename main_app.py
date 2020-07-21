@@ -122,13 +122,13 @@ class ExcelWoocommerceSyncApplication(Frame):
         self.LBL_STATUS = Label(self, width=25)
         self.LBL_STATUS.pack(padx=6)
 
-    def __init__(self, master=None):
+    def __init__(self, main=None):
         """
         Constructor method
-        :param master:
+        :param main:
         """
 
-        Frame.__init__(self, master)
+        Frame.__init__(self, main)
         self.pack()
         # create the widgets of the application
         self.createWidgets()
@@ -138,7 +138,7 @@ class ExcelWoocommerceSyncApplication(Frame):
 """
 root = Tk()
 root.title(u'Εφαρμογή ενημέρωσης τιμών e-shop')
-app = ExcelWoocommerceSyncApplication(master=root)
+app = ExcelWoocommerceSyncApplication(main=root)
 app.mainloop()
 root.destroy()
 """
